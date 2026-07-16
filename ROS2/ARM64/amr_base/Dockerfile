@@ -1,5 +1,5 @@
 # Inherits from the generic ARM64 Jazzy base image
-FROM your_registry/jazzy_base_arm64:latest
+FROM ghcr.io/robotics-avv/docker_files/jazzy_base_arm64:latest
 
 USER root
 

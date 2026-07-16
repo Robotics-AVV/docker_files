@@ -1,5 +1,5 @@
 # Inherits from your CUDA base image
-FROM your_registry/jazzy_base_cuda:latest
+FROM ghcr.io/robotics-avv/docker_files/jazzy_base_cuda:latest
 
 USER root
 

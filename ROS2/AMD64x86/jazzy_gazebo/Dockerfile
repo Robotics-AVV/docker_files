@@ -1,5 +1,5 @@
 # Inherits from your CPU-only base image
-FROM your_registry/jazzy_base:latest
+FROM ghcr.io/robotics-avv/docker_files/jazzy_base:latest
 
 # Switch to root to install packages
 USER root

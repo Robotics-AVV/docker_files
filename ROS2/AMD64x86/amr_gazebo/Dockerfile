@@ -1,5 +1,5 @@
 # Inherits from the CPU-only generic simulation image
-FROM your_registry/jazzy_gazebo:latest
+FROM ghcr.io/robotics-avv/docker_files/jazzy_gazebo:latest
 
 USER root
 

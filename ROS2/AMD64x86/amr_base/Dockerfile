@@ -1,5 +1,5 @@
 # Inherits from the CPU-only generic base image
-FROM your_registry/jazzy_base:latest
+FROM ghcr.io/robotics-avv/docker_files/jazzy_base:latest
 
 USER root
 
