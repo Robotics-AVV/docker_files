@@ -50,4 +50,4 @@ jobs:
           context: ROS2/ARM64/vslam_drone/
           platforms: linux/arm64
           push: true
-          tags: ghcr.io/${{ github.repository }}/vslam_drone:latest
+          tags: ghcr.io/robotics-avv/docker_files/vslam_drone:latest
