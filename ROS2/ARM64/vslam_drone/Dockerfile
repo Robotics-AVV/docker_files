@@ -1,5 +1,4 @@
-# Raspberry Pi ARM64 + ROS 2 Jazzy (V-SLAM Drone Environment)
-FROM osrf/ros:jazzy-ros-base
+FROM ros:jazzy-ros-base
 
 # The base image already has a default user 'ubuntu' with UID 1000.
 ARG USERNAME=ubuntu
