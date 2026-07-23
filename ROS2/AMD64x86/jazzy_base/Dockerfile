@@ -7,6 +7,9 @@ ARG USERNAME=ubuntu
 # Set up sudo and user permissions, and basic tools
 RUN apt-get update \
     && apt-get install -y sudo git curl nano wget \
+    ros-jazzy-navigation2 ros-jazzy-nav2-bringup ros-jazzy-slam-toolbox \
+    ros-jazzy-ros-gz-sim ros-jazzy-ros-gz-bridge ros-jazzy-xacro \
+    ros-jazzy-rmw-cyclonedds-cpp \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME \
     && rm -rf /var/lib/apt/lists/*
