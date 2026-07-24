@@ -1,11 +1,12 @@
-# Inherits from your CPU-only Gazebo base image
-FROM ghcr.io/robotics-avv/docker_files/jazzy_gazebo:latest
+# Inherits from your CPU-only base image
+FROM ghcr.io/robotics-avv/docker_files/jazzy_base:latest
 
 # Switch to root to install packages
 USER root
 
-# Install MAVROS and V-SLAM dependencies
+# Install Gazebo, MAVROS, and V-SLAM dependencies
 RUN apt-get update && apt-get install -y \
+    ros-jazzy-ros-gz \
     ros-jazzy-mavros ros-jazzy-mavros-extras ros-jazzy-mavros-msgs \
     ros-jazzy-rtabmap-ros ros-jazzy-image-transport-plugins \
     && rm -rf /var/lib/apt/lists/*
