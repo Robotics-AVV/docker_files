@@ -48,6 +48,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: ROS2/ARM64/vslam_drone/
-          platforms: linux/arm64
+          platforms: linux/amd64,linux/arm64
           push: true
           tags: ghcr.io/robotics-avv/docker_files/vslam_drone:latest
