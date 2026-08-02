@@ -9,7 +9,7 @@ RUN apt-get update \
     python3-pip python3-colcon-common-extensions build-essential \
     ros-jazzy-mavros ros-jazzy-mavros-extras ros-jazzy-mavros-msgs \
     ros-jazzy-rtabmap-ros ros-jazzy-image-transport-plugins \
-    ros-jazzy-rmw-cyclonedds-cpp \
+    ros-jazzy-rmw-cyclonedds-cpp ros-jazzy-backward-ros \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME \
     && rm -rf /var/lib/apt/lists/*
