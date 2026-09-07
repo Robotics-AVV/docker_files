@@ -15,7 +15,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 USER $USERNAME
-WORKDIR /home/$USERNAME/amr_ws
+WORKDIR /home/$USERNAME
 
 # Setup rosdep for the user
 RUN rosdep update
